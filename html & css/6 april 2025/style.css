@@ -1,0 +1,45 @@
+h1::first-letter {
+    background-color: blue;
+}
+
+h1:active {
+    background-color: red;
+}
+
+input:focus {
+    background-color: blue;
+    color: white;
+}
+
+#website {
+    color: yellow;
+    font-weight: 900;
+}
+
+a:link {
+    color: orange;
+    background-color: blue;
+}
+
+a:visited {
+    color: red;
+    background-color: green;
+}
+
+p {
+    background-color: red;
+}
+
+p::first-line {
+    background-color: blue;
+}
+
+#rickshaw {
+    background-image: url('./1.png');
+    height: 200px;
+    width: 300px;
+}
+
+#rickshaw:hover {
+    background-image: url('./2.png');
+}
