@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#one {
+    width: 500px;
+    height: 100px;
+    background-color: yellow;
+}
+#two {
+    color: white;
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+}
+#three {
+    width: 500px;
+    height: 100px;
+    background-color: red;
+}

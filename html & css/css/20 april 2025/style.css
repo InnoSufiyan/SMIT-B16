@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+
+}
+
+div:hover {
+    box-shadow: 36px 29px 62px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 36px 29px 62px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 36px 29px 62px 1px rgba(0, 0, 0, 0.75);
+}
+
+#logo {
+    display: inline-block;
+    width: 49%;
+}
+
+#logo img {
+    width: 25px;
+    margin-left: 20px;
+}
+
+#main {
+    background-color: black;
+}
+
+
+ul {
+    background-color: black;
+    color: lightgray;
+    display: inline-block;
+    width: 49%;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#home:hover {
+    display: none;
+}
+
+#farhan {
+    visibility: hidden;
+}

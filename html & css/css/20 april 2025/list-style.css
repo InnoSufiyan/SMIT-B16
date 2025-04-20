@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: white;
+    cursor: move;
+}
+
+input:focus {
+    background-color: blue;
+}
