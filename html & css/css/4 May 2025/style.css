@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+li:hover {
+    list-style: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+#section1 {
+    height: 700px;
+    width: 100%;
+    background-image: url('./assets/1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+#section1:hover {
+    cursor: pointer;
+}
+
+.button1 {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: rgb(0, 113, 227);
+    color: white;
+
+}
+
+.button2 {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(0, 113, 227);
+    background-color: transparent;
+    color: rgb(0, 113, 227);
+}
+
+.button2:hover {
+    border: 2px solid white;
+    background-color: rgb(0, 113, 227);
+    color: white;
+}
+
+#section1Buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+#section2 {
+    height: 700px;
+    width: 100%;
+    background-image: url('./assets/2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+#section2:hover {
+    cursor: pointer;
+}
+
+#section2Buttons {
+    display: flex;
+    gap: 20px;
+}
+
+#section2 h1,
+#section2 h3 {
+    color: white;
+}
+
+#section3 {
+    height: 700px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    gap: 10px;
+}
+
+#sub1Section3 {
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    background-image: url('./assets/3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-bottom: 130px;
+}
+
+#sub2Section3 {
+    height: 100%;
+    width: 50%;
+    background-color: green;
+    background-image: url('./assets/4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 20px;
+}

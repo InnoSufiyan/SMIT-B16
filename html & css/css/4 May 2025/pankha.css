@@ -1,0 +1,12 @@
+#pankha {
+    height: 300px;
+    width: 300px;
+    background-image: url('./assets/pankha.png');
+    background-size: contain;
+}
+
+#pankha:hover {
+    transform: rotate(360deg);
+    transition: transform 3s;
+    transition-timing-function: ease-in-out;
+}

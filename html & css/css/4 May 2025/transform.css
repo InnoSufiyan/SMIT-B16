@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#box:hover {
+    transform: translateX(700px);
+    background-color: purple;
+    transition-duration:  2s ;
+    /* transition-delay: 10s; */
+    transition-timing-function: ease
+}
+#box1 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#box1:hover {
+    transform: translateX(700px);
+    background-color: purple;
+    transition-duration:  2s ;
+    /* transition-delay: 10s; */
+    transition-timing-function: linear
+}
+#box2 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#box2:hover {
+    transform: translateX(700px);
+    background-color: purple;
+    transition-duration:  2s ;
+    /* transition-delay: 10s; */
+    transition-timing-function: ease-in
+}
+#box3 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#box3:hover {
+    transform: translateX(700px);
+    background-color: purple;
+    transition-duration:  2s ;
+    /* transition-delay: 10s; */
+    transition-timing-function: ease-in-out
+}
+#box4 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#box4:hover {
+    transform: translateX(700px);
+    background-color: purple;
+    transition-duration:  2s ;
+    /* transition-delay: 10s; */
+    transition-timing-function: ease-out
+}
+
+/* #aadmi {
+    width: 154px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('./assets/mota-aadmi.png');
+    transform: translate(100px, 100px);
+    transform-origin: bottom;
+}
+
+#aadmi:hover {
+    transition: transform 1s;
+    transform: translate(100px, 100px) scale(1.3);
+} */
