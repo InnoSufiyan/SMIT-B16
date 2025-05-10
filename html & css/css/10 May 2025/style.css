@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 50px;
+    /* animation-iteration-count: infinite; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: both; */
+    animation-name: jaffar;
+    /* animation-delay: 5s; */
+    animation-direction: alternate;
+}
+
+.btn1 {
+    background-color: blue;
+    /* color: white; */
+
+    animation-timing-function: ease
+    /* animation-delay: 0s; */
+}
+.btn2 {
+    background-color: red;
+    /* color: white; */
+    animation-timing-function: ease-in
+    /* animation-delay: 0.2s; */
+}
+.btn3 {
+    background-color: green;
+    /* color: white; */
+    animation-timing-function: ease-in-out
+    /* animation-delay: 0.4s; */
+}
+.btn4 {
+    background-color: yellow;
+    /* color: white; */
+    animation-timing-function: ease-out
+    /* animation-delay: 0.6s; */
+}
+.btn5 {
+    background-color: purple;
+    /* color: white; */
+    animation-timing-function: linear
+    /* animation-delay: 0.8s; */
+}
+
+@keyframes jaffar {
+    0%{
+        transform: translate(0px);
+    }
+
+    100% {
+        transform: translate(380px);
+    }
+}
