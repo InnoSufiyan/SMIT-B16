@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#fortuneWheel {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+}
+
+#fortuneWheel > img {
+    height: 100%;
+    width: 100%;
+    animation: wheelAnimation 5s ease-in-out 2.3s both;
+}
+
+#phuntru {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 6px;
+    top: 25px;
+    transform: rotate(50deg);
+    z-index: 2;
+}
+
+#phuntru img {
+    height: 100%;
+    width: 100%;
+}
+
+#kutta {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 45%;
+    background-image: url('./assets/kutta.png');
+    background-size: cover;
+    transform-origin: bottom;
+    animation-name: kuttaAnimation;
+    animation-duration: 0.5s;
+    animation-delay: 1.8s;
+    animation-fill-mode: both;
+}
+
+#bat {
+    position: absolute;
+    height: 33px;
+    width: 150px;
+    top: 0;
+    background-image: url('./assets/bat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform-origin: left;
+    animation-name: batAnimation;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes batAnimation {
+    0% {
+        top: 300px;
+        left: 100px;
+        transform: rotate(45deg);
+    }
+
+    37% {
+        top: 100px;
+        left: 100px;
+        transform: rotate(-45deg);
+    }
+
+    52% {
+        top: 100px;
+        left: 100px;
+        transform: rotate(-45deg);
+    }
+
+    70% {
+        left: 260px;
+        transform: rotate(0deg);
+        top: 160px;
+    }
+
+    80% {
+        left: 260px;
+        transform: rotate(0deg);
+        top: 160px;
+    }
+
+    100% {
+        top: 400px;
+        transform: rotate(45deg);
+        left: 260px;
+    }
+}
+
+@keyframes kuttaAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+@keyframes wheelAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1280deg);
+    }
+}

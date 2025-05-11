@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pappa {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.bachay {
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+}
+
+#one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
