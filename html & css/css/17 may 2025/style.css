@@ -1,0 +1,102 @@
+html {
+    cursor: pointer;
+    cursor: help;
+    cursor: progress;
+
+    cursor: url(./1.jpg), pointer
+}
+
+h1 {
+    background-image: linear-gradient(red, blue);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pappa {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    gap: 10px;
+
+}
+
+.bachay {
+    border-radius: 10px;
+}
+
+#bacha1 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIkkE68C7rUuMsswyLbpCOpW8Y6bMUBjD8Q&s");
+    background-size: cover;
+    grid-column: 1 / 5;
+    grid-row: 4 / 7;
+}
+
+.bachay:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    /* cursor: pointer; */
+    /* cursor: url("https://www.icegif.com/wp-content/uploads/car-icegif-2.gif"), auto; */
+}
+
+#bacha2 {
+    background-image: url("https://5.imimg.com/data5/TI/LQ/MY-19128035/corporate-events.jpg");
+    background-size: cover;
+    grid-column: 5 / 8;
+    grid-row: 2 / 5;
+}
+
+#bacha3 {
+    background-image: url("https://www.srisowbarnikaadecorator.com/wp-content/uploads/2023/01/10-Tips-for-Professional-Corporate-Event-Planning.jpg");
+    background-size: cover;
+    grid-row: 1 / 5;
+    grid-column: 8 / 12;
+}
+
+#bacha4 {
+    background-image: url("https://media.istockphoto.com/id/530685719/photo/group-of-business-people-standing-in-hall-smiling-and-talking-together.jpg?s=612x612&w=0&k=20&c=jX61UCaRLlN_jm-prBgTqLh6SZkptzlJocO3QDQu3k4=");
+    background-size: cover;
+    grid-row: 7 / 10;
+    grid-column: 1 / 5;
+}
+
+#bacha5 {
+    background-image: url("https://images.unsplash.com/photo-1561489396-888724a1543d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29ycG9yYXRlJTIwZXZlbnR8ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    grid-row: 5 / 10;
+    grid-column: 5 / 10;
+}
+
+#bacha6 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTggM43cqXlAxtDYnnPJMMT55Az4wgApcEgVw&s");
+    background-size: cover;
+    grid-row: 5 / 7;
+    grid-column: 10 / 14;
+}
+
+#bacha7 {
+    background-image: url("https://media.istockphoto.com/id/1182525590/photo/savory-and-sweet-gourmet-food-at-corporate-office-party.jpg?s=612x612&w=0&k=20&c=OVj8WKTKEYhG-vJUWPyo9v2V29ZVOjpk0PcCtfPSx5c=");
+    background-size: cover;
+    grid-row: 10 / 14;
+    grid-column: 3 / 7;
+}
+
+#bacha8 {
+    background-image: url("https://www.4foreverything.com/uploads/images/1706520513_1cd3b33e1cf03a58d033.jpg");
+    background-size: cover;
+    grid-row: 10 / 15;
+    grid-column: 7 / 10;
+}
+
+#bacha9 {
+    background-image: url("https://cdn.meyatri.com/cdn/images/events/imagegroup/64477e8d4934e_61d69685c97df.jpeg");
+    background-size: cover;
+    grid-row: 7 / 12;
+    grid-column: 10 / 14;
+}
