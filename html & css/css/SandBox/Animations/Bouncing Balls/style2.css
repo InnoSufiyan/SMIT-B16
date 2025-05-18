@@ -1,0 +1,65 @@
+.pappa {
+    display: flex;
+    gap: 94px;
+    justify-content: center;
+}
+
+.thread {
+    width: 5px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    transform-origin: top;
+}
+
+.thread:first-child {
+    animation: pendulum 4s ease-in-out infinite;
+}
+.thread:last-child {
+    animation: pendulum2 4s ease-in-out infinite;
+}
+
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.thread::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    transform: translate(-50px, 0px);
+}
+
+@keyframes pendulum {
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes pendulum2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

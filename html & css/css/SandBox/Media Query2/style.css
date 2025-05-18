@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 5px;
+}
+
+.searchBox {
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 10px 30px;
+    display: flex;
+}
+
+.jobs {
+    background-color: blue;
+}
+.searching {
+    background-color: blueviolet;
+}
+
+.second {
+    display: none;
+}
+
+@media(max-width: 600px) {
+    .first {
+        display: none;
+    }
+    .second {
+        display: flex;
+    }
+}
