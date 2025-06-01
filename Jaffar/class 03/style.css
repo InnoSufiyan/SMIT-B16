@@ -1,0 +1,16 @@
+.mySlider img {
+    width: 100%;
+    height: 400px;
+}
+
+.prevIcon{
+    color: red !important;
+}
+
+.carousel-control-prev-icon{
+    color: red !important;
+}
+
+.myCol{
+    padding: 0 32px;
+}
