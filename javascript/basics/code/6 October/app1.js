@@ -1,1 +1,0 @@
-var passed_out_students = []
