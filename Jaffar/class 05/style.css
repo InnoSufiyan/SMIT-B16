@@ -1,0 +1,163 @@
+* {
+    font-family: "Sora", sans-serif;
+}
+
+.logo {
+    width: 175px;
+    height: 55px;
+}
+
+.navContainer {
+    padding: 0 76px;
+    border-bottom: 1px solid #006AFF;
+}
+
+.btn-contact {
+    width: 130px;
+    height: 35px;
+    background-color: #006AFF;
+    border-radius: 7px;
+    color: white;
+    border: none;
+}
+
+
+
+.wheelImg {
+    width: 450px;
+    height: 400px;
+}
+
+.topSection .heading {
+    color: #006AFF;
+    font-weight: 700;
+}
+
+.topSection button {
+    border: 1.5px solid #0500FF;
+    width: 313px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: #006AFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.centerContainer {
+    padding: 0 76px;
+    background-color: #F3F1FF;
+
+}
+
+.industriesContainer h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #1463CC;
+}
+
+.industriesCard {
+    width: 100%;
+    height: 321px;
+    background: linear-gradient(146.95deg, #0169FB 0%, #1862C5 102.46%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.industriesCard img {
+    width: 86px;
+    height: 88px;
+
+
+}
+
+.industriesCard h1 {
+    color: white;
+    font: 40px;
+    font-weight: 600;
+}
+
+.industriesCard p {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+.industriesCardImg {
+
+}
+
+
+.CombinationContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CombinationContainer h1{
+    color: #1463CC;
+    font-size: 40px;
+}
+
+.imgSlider{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+}
+
+.imgSlider img{
+    width: 120px;
+    height: 80;
+}
+
+.SelectCombination{
+    width: 50%;
+}
+
+
+.ourTeamImg{
+    text-align: center;
+}
+.OurTeam img{
+    display: inline-block;
+    width: 80%;
+}
+
+.ourTeamCard{
+    position: relative;
+    top: -50px;
+}
+
+
+
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s ease-in-out 3 both;
+	        animation: rotate-center 0.6s ease-in-out 3 both;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
