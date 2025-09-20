@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.fontSize {
+    font-size: 64px;
+}
