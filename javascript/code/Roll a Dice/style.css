@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    background-image: linear-gradient(45deg, #b3282f, #6b3074);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainBox {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+}
+
+.player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ad6e8d;
+}
+
+.active {
+    background-color: #d9a3b0;
+}
+
+
+.detailsAndTotalScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailsAndTotalScore h3 {
+    font-size: 40px;
+}
+
+.detailsAndTotalScore h1 {
+    font-size: 100px;
+}
+
+.turnScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    background-color: #bf2e57;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+#centerArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    background-color: #f6f0f0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#leaderBoardDiv {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+ul li {
+    width: 100%;
+    list-style: none;
+    background-color: #b3282f;
+    font-size: 20px;
+    border: 2px solid black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

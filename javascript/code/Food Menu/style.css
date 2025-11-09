@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#btns button {
+    padding: 5px 20px;
+}
+
+#foodItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.foodItem {
+    display: flex;
+    width: 45%;
+    gap: 10px;
+}
+
+.imgDiv {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    width: 40%;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titleDescription {
+    width: 60%;
+}
+
+.titlePrice {
+    display: flex;
+    justify-content: space-between;
+}
