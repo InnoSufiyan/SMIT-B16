@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Page</title>
+    <link rel="stylesheet" href="jobsSearch.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Job Posting Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Profile Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="fs-5">CompanyName</h2>
+                    <input id="companyNameInput" type="text" placeholder="CompanyName">
+                    <hr>
+                    <h2 class="fs-5">Designation</h2>
+                    <input id="designationInput" type="text" placeholder="Designation">
+                    <hr>
+                    <h2 class="fs-5">Salary</h2>
+                    <input id="salaryInput" type="text" placeholder="Salary">
+                    <hr>
+                    <h2 class="fs-5">Views</h2>
+                    <input id="viewsInput" type="text" placeholder="Views">
+                    <hr>
+                    <h2 class="fs-5">Country</h2>
+                    <input id="countryInput" type="text" placeholder="Country">
+
+                    <hr>
+                    <h2 class="fs-5">City</h2>
+                    <input id="cityInput" type="text" placeholder="City">
+                    <hr>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button onclick="saveJobHandler()" type="button" class="btn btn-primary">Save Job</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Post a Job
+    </button>
+
+    <div id="jobsSearch">
+        <input type="text">
+        <button>Search</button>
+    </div>
+    <div id="allJobs">
+        
+    </div>
+
+    <script src="jobsearch.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
