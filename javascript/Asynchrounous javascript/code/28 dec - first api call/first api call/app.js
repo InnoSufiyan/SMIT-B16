@@ -28,3 +28,5 @@ function renderCountry(countryDetails) {
     cardTitle.textContent = common
     cardText.textContent = official
 }
+
+fetch('https://geocode.xyz/24.8607,67.0011?geoit=json&auth=802447184335778970346x7085').then(response => console.log(response))
