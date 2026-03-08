@@ -4,6 +4,9 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  deleteUser
 } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-auth.js";
 
 import {
@@ -15,6 +18,7 @@ import {
   query,
   where,
   getDocs,
+  deleteDoc,
 } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
 
 // Your web app's Firebase configuration
@@ -83,6 +87,54 @@ function loginFunction(email, password) {
     });
 }
 
+function toGetLoggedInUser() {
+  const auth = getAuth();
+  onAuthStateChanged(auth, (user) => {
+    console.log(user, "====>>> kya user mila ???");
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/auth.user
+      const uid = user.uid;
+
+      console.log(uid, "==>> jo user login hai, uski user id yeh hai");
+
+      console.log(window.location, "==>> window location");
+
+      if (window.location.pathname !== "/home.html") {
+        window.location = "./home.html";
+      }
+      // ...
+    } else {
+      // User is signed out
+      // ...
+      console.log("===>>> user to login hi nahin hai");
+
+      if (
+        window.location.pathname == "/index.html" ||
+        window.location.pathname == "/login.html"
+      ) {
+        console.log(
+          "==>> already signup ya login k page per hun, kahin aur jaaaney ki zaroorat nai hai",
+        );
+      } else {
+        window.location = "./login.html";
+      }
+    }
+  });
+}
+
+function logoutUser() {
+  const auth = getAuth();
+  signOut(auth)
+    .then(() => {
+      // Sign-out successful.
+      window.location = "./login.html";
+    })
+    .catch((error) => {
+      // An error happened.
+    });
+}
+
 async function getSingleUserDetail(uniqueId) {
   const docRef = doc(db, "users", uniqueId);
   const docSnap = await getDoc(docRef);
@@ -96,13 +148,63 @@ async function getSingleUserDetail(uniqueId) {
 }
 
 async function getAllUserDetails() {
+  const usersArr = [];
   const q = query(collection(db, "users"));
 
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {
     // doc.data() is never undefined for query doc snapshots
     console.log(doc.id, " => ", doc.data());
+    const user = doc.data();
+    usersArr.push({
+      id: doc.id,
+      ...user,
+    });
   });
+
+  // console.log(usersArr, "===>> usersArr");
+  return usersArr;
 }
 
-export { signUpFunction, loginFunction, getSingleUserDetail, getAllUserDetails };
+async function updateUserData(details, uid, collection) {
+  try {
+    await setDoc(doc(db, collection, uid), details);
+  } catch (error) {
+    console.log(error, "==>> error aaya hai");
+  }
+}
+
+async function deleteUserData(collection, userId) {
+  await deleteDoc(doc(db, collection, userId));
+}
+
+async function deleteUserAuth() {
+  const user = auth.currentUser;
+
+  console.log(user, "==>> user");
+
+
+  deleteUser(user)
+    .then(() => {
+      // User deleted.
+
+      console.log("=====>>> deleted successfully")
+    })
+    .catch((error) => {
+      // An error ocurred
+      // ...
+      console.log(error, "===>> error")
+    });
+}
+
+export {
+  signUpFunction,
+  loginFunction,
+  getSingleUserDetail,
+  getAllUserDetails,
+  toGetLoggedInUser,
+  logoutUser,
+  updateUserData,
+  deleteUserData,
+  deleteUserAuth
+};

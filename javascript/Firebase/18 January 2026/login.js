@@ -1,4 +1,6 @@
-import { loginFunction } from "./firebase.js";
+import { loginFunction, toGetLoggedInUser } from "./firebase.js";
+
+toGetLoggedInUser()
 
 const button = document.querySelector("button");
 const email = document.querySelector("#email");

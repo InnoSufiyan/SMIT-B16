@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Report View | HealthMate</title>
+    <link rel="stylesheet" href="report-view.css" />
+  </head>
+  <body>
+    <header class="top">
+      <button onclick="history.back()">⬅ Back</button>
+      <h2>Medical Report</h2>
+    </header>
+
+    <main class="layout">
+      <!-- LEFT: Preview -->
+      <section class="preview">
+        <div id="filePreview">Loading preview...</div>
+      </section>
+
+      <!-- RIGHT: AI -->
+      <section class="ai">
+        <h3>🤖 AI Health Summary</h3>
+
+        <button id="analyzeBtn">Analyze with AI</button>
+
+        <div id="aiResult" class="ai-result">
+          <p class="placeholder">
+            Click “Analyze with AI” to generate report explanation
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="report-view.js"></script>
+  </body>
+</html>

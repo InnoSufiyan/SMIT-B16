@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | HealthMate</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>HealthMate</h2>
+      <ul>
+        <li class="active">🏠 Dashboard</li>
+        <li>👨‍👩‍👧 Family Members</li>
+        <li>📁 Medical Reports</li>
+        <li>🤖 AI Guidance</li>
+        <li class="logout">🚪 Logout</li>
+      </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <h1>Welcome 👋</h1>
+        <button id="addMemberBtn">➕ Add Family Member</button>
+      </header>
+
+      <!-- Family Section -->
+      <section class="family">
+        <h2>Your Family</h2>
+        <div class="family-grid" id="familyGrid">
+          <!-- Cards injected by JS -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="memberModal">
+      <div class="modal-content">
+        <h3>Add Family Member</h3>
+        <input type="text" id="name" placeholder="Full Name" />
+        <input type="number" id="age" placeholder="Age" />
+        <input
+          type="text"
+          id="relation"
+          placeholder="Relation (Father, Mother)"
+        />
+        <button id="saveMember">Save</button>
+      </div>
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>

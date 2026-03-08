@@ -1,4 +1,9 @@
-import { getAllUserDetails, getSingleUserDetail, signUpFunction } from "./firebase.js";
+import { getAllUserDetails, getSingleUserDetail, signUpFunction, toGetLoggedInUser } from "./firebase.js";
+
+toGetLoggedInUser()
+
+
+
 
 const button = document.querySelector("#signup");
 const getSingleData = document.querySelector("#getSingleData");

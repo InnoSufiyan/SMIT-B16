@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Member Dashboard | HealthMate</title>
+    <link rel="stylesheet" href="member-dashboard.css" />
+  </head>
+  <body>
+    <!-- Top Header -->
+    <header class="header">
+      <button class="back-btn" onclick="history.back()">⬅</button>
+      <h1 id="memberName">Loading...</h1>
+      <span class="badge">Family Member</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Member Info -->
+      <section class="card info-card">
+        <h2>Member Information</h2>
+        <p id="memberInfo">Loading...</p>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>📄 Reports</h3>
+          <p id="reportsCount">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>🧪 Tests</h3>
+          <p id="testsCount">0</p>
+        </div>
+        <div class="stat-card">
+          <h3>🤖 AI Insights</h3>
+          <p>Coming Soon</p>
+        </div>
+      </section>
+
+      <!-- Reports Section -->
+      <section class="card">
+        <div class="section-header">
+          <h2>Medical Reports</h2>
+          <!-- Upload Button triggers Firebase function elsewhere -->
+          <button class="primary-btn" id="uploadReportBtn">
+            ➕ Upload Report
+          </button>
+        </div>
+
+        <!-- Empty state / report list -->
+        <div id="reportList" class="report-list">
+          <div class="empty-state">
+            <p>No reports uploaded yet</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Optional Footer / Info -->
+    <footer style="text-align: center; padding: 20px; color: #94a3b8">
+      HealthMate &copy; 2026
+    </footer>
+
+    <div class="modal" id="reportModal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+
+        <div id="previewContainer">
+          <!-- iframe / img injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="member-dashboard.js"></script>
+  </body>
+</html>
